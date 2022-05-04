@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scoreTable"
+    android:layout_width="410sp"
+    android:layout_height="732sp"
+    android:layout_margin="1sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="@color/purple_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ace"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/aceScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/twoScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Three"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/threeScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Four"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/fourScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Five"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/fivesScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Six"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/sixScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/sevenScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bonus"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/bonusScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#CAE9F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Upper"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#CAE9F5"
+            android:id="@+id/upperScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 of a Kind"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/tokScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 of a kind"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/fokScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full house"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/fhScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Straight"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/smScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Straight"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/lgScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yahtzee"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/yScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chance"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/chanceScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yahtzee Bonus"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/ybScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <TextView
+            android:background="#FEE5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Lower"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="#FEE5B5"
+            android:id="@+id/lowerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+
+        android:padding="3sp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Total"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+
+            android:id="@+id/totalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:padding="3sp">
+
+        <Button
+            android:id="@+id/roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Dice"></Button>
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <RadioButton
+            ></RadioButton>
+
+        <TextView
+            android:id="@+id/diceOne"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <RadioButton
+            ></RadioButton>
+
+        <TextView
+            android:id="@+id/diceTwo"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <RadioButton
+            ></RadioButton>
+
+        <TextView
+            android:id="@+id/diceThree"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+    </TableRow>
+
+
+    <TableRow>
+        <RadioButton
+            ></RadioButton>
+
+        <TextView
+            android:id="@+id/diceFour"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <RadioButton
+            ></RadioButton>
+
+        <TextView
+            android:id="@+id/diceFive"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </TableRow>
+
+</TableLayout>
