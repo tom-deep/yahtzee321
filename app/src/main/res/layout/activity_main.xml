@@ -179,7 +179,7 @@
 
         <TextView
             android:background="#CAE9F5"
-            android:id="@+id/sevenScore"
+            android:id="@+id/firstUpperScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -354,10 +354,10 @@
             android:textSize="15sp" />
 
         <TextView
-            android:background="#FEE5B5"
             android:id="@+id/yScore"
-            android:layout_width="wrap_content"
+            android:layout_width="77dp"
             android:layout_height="wrap_content"
+            android:background="#FEE5B5"
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
@@ -462,37 +462,33 @@
             android:layout_height="wrap_content"
             android:text="Roll Dice"></Button>
 
-
     </TableRow>
 
     <TableRow>
 
-        <RadioButton
-            ></RadioButton>
+        <RadioButton android:id="@+id/r1"></RadioButton>
 
         <TextView
             android:id="@+id/diceOne"
-            android:layout_width="57dp"
+            android:layout_width="67dp"
             android:layout_height="wrap_content"
             android:background="@null"
             android:text="0"
             android:textColor="#000000"
             android:textSize="30sp" />
 
-        <RadioButton
-            ></RadioButton>
+        <RadioButton android:id="@+id/r2"></RadioButton>
 
         <TextView
             android:id="@+id/diceTwo"
-            android:layout_width="62dp"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:background="@null"
             android:text="0"
             android:textColor="#000000"
             android:textSize="30sp" />
 
-        <RadioButton
-            ></RadioButton>
+        <RadioButton android:id="@+id/r3"></RadioButton>
 
         <TextView
             android:id="@+id/diceThree"
@@ -507,8 +503,8 @@
 
 
     <TableRow>
-        <RadioButton
-            ></RadioButton>
+
+        <RadioButton android:id="@+id/r4"></RadioButton>
 
         <TextView
             android:id="@+id/diceFour"
@@ -519,12 +515,11 @@
             android:textColor="#000000"
             android:textSize="30sp" />
 
-        <RadioButton
-            ></RadioButton>
+        <RadioButton android:id="@+id/r5"></RadioButton>
 
         <TextView
             android:id="@+id/diceFive"
-            android:layout_width="66dp"
+            android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:background="@null"
             android:text="0"
