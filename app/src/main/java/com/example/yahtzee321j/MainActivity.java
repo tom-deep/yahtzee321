@@ -3,6 +3,7 @@ package com.example.yahtzee321j;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.*;
 
@@ -43,37 +44,44 @@ public class MainActivity extends AppCompatActivity {
                 //checks if radioButton is clicked before rolling dice
                 //generates a random dice roll and updates it to the interface
                 int d1=0,d2=0,d3=0,d4=0,d5 = 0;
+                String s1="",s2="",s3="",s4="",s5="";
                 if(!r1.isChecked()){
                     d1 = rand();
-                    String s1 = String.valueOf(d1);
+                    s1 = String.valueOf(d1);
                     dice1.setText(s1);
                 }
                 if(!r2.isChecked()){
                     d2 = rand();
-                    String s2 = String.valueOf(d2);
+                    s2 = String.valueOf(d2);
                     dice2.setText(s2);
                 }
                 if(!r3.isChecked()){
                     d3 = rand();
-                    String s3 = String.valueOf(d3);
+                    s3 = String.valueOf(d3);
                     dice3.setText(s3);
                 }
                 if(!r4.isChecked()){
                     d4 = rand();
-                    String s4 = String.valueOf(d4);
+                    s4 = String.valueOf(d4);
                     dice4.setText(s4);
                 }
                 if(!r5.isChecked()){
                     d5 = rand();
-                    String s5 = String.valueOf(d5);
+                    s5 = String.valueOf(d5);
                     dice5.setText(s5);
                 }
 
                 //disables roll button after three rolls
                 if (rolls == 2) {
                     view.setEnabled(false);
+                    Log.d("Var",s1);
+                    Log.d("Var",s2);
+                    Log.d("Var",s3);
+                    Log.d("Var",s4);
+                    Log.d("Var",s5);
+
                     int[] stats = checkValue(d1,d2,d3,d4,d5);
-                    scoreA.setText(Arrays.toString(stats));
+                    //scoreA.setText(Arrays.toString(stats));
                 }
                 rolls = rolls + 1;
             }
