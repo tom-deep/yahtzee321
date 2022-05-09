@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Declaring xml attributes globally
     private RadioButton r1, r2, r3, r4, r5;
-    private Button roleDye;
+    private Button roleDye,nextB;
     private TextView dice1, dice2, dice3, dice4, dice5, ace, two, three, four, five, six, tUp, uBonus, ttUpper, tok, fok, fh, smStraight, lgStraight, yahtzee, chance, yBonus, ttLower, fTotal;
     int rolls = 0;
     int d1 = 0, d2 = 0, d3 = 0, d4 = 0, d5=0;
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //assigning java variables xml attributes
+        nextB = (Button) findViewById(R.id.next);
         roleDye = (Button) findViewById(R.id.roll);
         dice1 = (TextView) findViewById(R.id.diceOne);
         dice2 = (TextView) findViewById(R.id.diceTwo);
@@ -58,6 +59,19 @@ public class MainActivity extends AppCompatActivity {
         ttLower = (TextView) findViewById(R.id.lowerScore);
         fTotal = (TextView) findViewById(R.id.totalScore);
 
+        nextB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nextB.setEnabled(false);
+                roleDye.setEnabled(true);
+                r1.setChecked(false);
+                r2.setChecked(false);
+                r3.setChecked(false);
+                r4.setChecked(false);
+                r5.setChecked(false);
+                rolls = 0;
+            }
+        });
 
         //on click listener
         roleDye.setOnClickListener(new View.OnClickListener() {
@@ -135,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
                     four.setText(fScore);
                     five.setText(fiScore);
                     six.setText(sScore);
+                    nextB.setEnabled(true);
                 }
                 rolls = rolls + 1;
             }
@@ -279,6 +294,8 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
+
 
 
 
