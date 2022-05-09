@@ -54,6 +54,12 @@
             android:textColor="#000000"
             android:textSize="15sp" />
 
+        <RadioButton
+            android:id="@+id/race"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
+
     </TableRow>
 
     <TableRow
@@ -75,6 +81,12 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rtwo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
 
     </TableRow>
 
@@ -98,6 +110,12 @@
             android:textColor="#000000"
             android:textSize="15sp" />
 
+        <RadioButton
+            android:id="@+id/rthree"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
+
     </TableRow>
 
     <TableRow
@@ -119,6 +137,12 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rFour"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
 
     </TableRow>
 
@@ -142,6 +166,12 @@
             android:textColor="#000000"
             android:textSize="15sp" />
 
+        <RadioButton
+            android:id="@+id/rFive"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
+
     </TableRow>
 
     <TableRow
@@ -163,6 +193,12 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rSix"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
 
     </TableRow>
 
@@ -186,6 +222,7 @@
             android:textColor="#000000"
             android:textSize="15sp" />
 
+
     </TableRow>
 
     <TableRow
@@ -207,6 +244,7 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
+
 
     </TableRow>
 
@@ -252,6 +290,12 @@
             android:textColor="#000000"
             android:textSize="15sp" />
 
+        <RadioButton
+            android:id="@+id/rtok"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
+
     </TableRow>
 
     <TableRow
@@ -273,6 +317,12 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rfok"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
 
     </TableRow>
 
@@ -296,6 +346,12 @@
             android:textColor="#000000"
             android:textSize="15sp" />
 
+        <RadioButton
+            android:id="@+id/rfh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
+
     </TableRow>
 
     <TableRow
@@ -317,6 +373,12 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/smStraight"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
 
     </TableRow>
 
@@ -340,6 +402,12 @@
             android:textColor="#000000"
             android:textSize="15sp" />
 
+        <RadioButton
+            android:id="@+id/rlgStraight"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
+
     </TableRow>
 
     <TableRow
@@ -361,6 +429,12 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rchance"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"></RadioButton>
 
     </TableRow>
 
