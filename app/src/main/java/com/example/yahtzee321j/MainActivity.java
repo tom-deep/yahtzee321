@@ -103,6 +103,38 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("Var", s5);
 
                     int[] stats = checkValue(d1, d2, d3, d4, d5);
+                    if (threeOfKind(stats)){
+                        String tScore = String.valueOf(d1+d2+d3+d4+d5);
+                        tok.setText(tScore);
+                    }
+                    if(fourOfKind(stats)){
+                        String tScore = String.valueOf(d1+d2+d3+d4+d5);
+                        fok.setText(tScore);
+                    }
+                    if(checkHouse(stats)){
+                        fh.setText("25");
+                    }
+                    if(smStraight(stats)){
+                        smStraight.setText("30");
+                    }
+                    if(lgStraight(stats)){
+                        lgStraight.setText("40");
+                    }
+                    if(yaht(stats)){
+                        yahtzee.setText("50");
+                    }
+                    String aScore = String.valueOf(stats[0]);
+                    String twScore = String.valueOf(stats[1]*2);
+                    String thScore = String.valueOf(stats[2]*3);
+                    String fScore = String.valueOf(stats[3]*4);
+                    String fiScore = String.valueOf(stats[4]*5);
+                    String sScore = String.valueOf(stats[5]*6);
+                    ace.setText(aScore);
+                    two.setText(twScore);
+                    three.setText(thScore);
+                    four.setText(fScore);
+                    five.setText(fiScore);
+                    six.setText(sScore);
                 }
                 rolls = rolls + 1;
             }
@@ -221,18 +253,27 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    public boolean twoOfKind(int[] values) {
+    public boolean threeOfKind(int[] values) {
         for(int i=0; i<6; i++){
-            if(values[i] == 2){
+            if(values[i] == 3){
                 return true;
             }
         }
         return false;
     }
 
-    public boolean threeOfKind(int[] values) {
+    public boolean fourOfKind(int[] values) {
         for(int i=0; i<6; i++){
-            if(values[i] == 3){
+            if(values[i] == 4){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean yaht(int[] values) {
+        for(int i=0; i<6; i++){
+            if(values[i] == 5){
                 return true;
             }
         }
