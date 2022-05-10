@@ -15,7 +15,7 @@ import java.util.*;
 public class MainActivity extends AppCompatActivity {
 
     //Declaring xml attributes globally
-    private RadioButton r1, r2, r3, r4, r5;
+    private RadioButton r1, r2, r3, r4, r5, rAce, rTwo, rThree, rFour, rFive, rSix, rTok, rFok, rFh, rSmS, rLgS, rY;
     private Button roleDye,nextB;
     private TextView dice1, dice2, dice3, dice4, dice5, ace, two, three, four, five, six, tUp, uBonus, ttUpper, tok, fok, fh, smStraight, lgStraight, yahtzee, chance, yBonus, ttLower, fTotal;
     int rolls = 0;
@@ -58,11 +58,46 @@ public class MainActivity extends AppCompatActivity {
         yBonus = (TextView) findViewById(R.id.ybScore);
         ttLower = (TextView) findViewById(R.id.lowerScore);
         fTotal = (TextView) findViewById(R.id.totalScore);
+        rAce = (RadioButton) findViewById(R.id.race);
+        rTwo = (RadioButton) findViewById(R.id.rtwo);
+        rThree = (RadioButton) findViewById(R.id.rthree);
+        rFour = (RadioButton) findViewById(R.id.rFour);
+        rFive = (RadioButton) findViewById(R.id.rFive);
+        rSix = (RadioButton) findViewById(R.id.rSix);
+        rTok = (RadioButton) findViewById(R.id.rtok);
+        rFok = (RadioButton) findViewById(R.id.rfok);
+        rFh = (RadioButton) findViewById(R.id.rfh);
+        rSmS = (RadioButton) findViewById(R.id.smStraight);
+        rLgS = (RadioButton) findViewById(R.id.rlgStraight);
+        rY = (RadioButton) findViewById(R.id.rY);
 
         nextB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nextB.setEnabled(false);
+                if(rTok.isChecked()){
+                    tok.setText(String.valueOf(d1+d2+d3+d4+d5));
+                    rTok.setEnabled(false);
+                }
+                if (rFok.isChecked()){
+                    fok.setText(String.valueOf(d1+d2+d3+d4+d5));
+                }
+
+                if (rFh.isChecked()){
+                    fh.setText("25");
+                }
+
+                if (rSmS.isChecked()){
+                    smStraight.setText("30");
+                }
+
+                if(rLgS.isChecked()){
+                    lgStraight.setText("40");
+                }
+
+                if(rY.isChecked()){
+                    yahtzee.setText("50");
+                }
                 roleDye.setEnabled(true);
                 r1.setChecked(false);
                 r2.setChecked(false);
@@ -70,6 +105,11 @@ public class MainActivity extends AppCompatActivity {
                 r4.setChecked(false);
                 r5.setChecked(false);
                 rolls = 0;
+                dice1.setText("0");
+                dice2.setText("0");
+                dice3.setText("0");
+                dice4.setText("0");
+                dice5.setText("0");
             }
         });
 
@@ -118,24 +158,22 @@ public class MainActivity extends AppCompatActivity {
 
                     int[] stats = checkValue(d1, d2, d3, d4, d5);
                     if (threeOfKind(stats)){
-                        String tScore = String.valueOf(d1+d2+d3+d4+d5);
-                        tok.setText(tScore);
+                        rTok.setVisibility(view.VISIBLE);
                     }
                     if(fourOfKind(stats)){
-                        String tScore = String.valueOf(d1+d2+d3+d4+d5);
-                        fok.setText(tScore);
+                        rFok.setVisibility(view.VISIBLE);
                     }
                     if(checkHouse(stats)){
-                        fh.setText("25");
+                        rFh.setVisibility(view.VISIBLE);
                     }
                     if(smStraight(stats)){
-                        smStraight.setText("30");
+                        rSmS.setVisibility(view.VISIBLE);
                     }
                     if(lgStraight(stats)){
-                        lgStraight.setText("40");
+                        rLgS.setVisibility(view.VISIBLE);
                     }
                     if(yaht(stats)){
-                        yahtzee.setText("50");
+                        rY.setVisibility(view.VISIBLE);
                     }
                     String aScore = String.valueOf(stats[0]);
                     String twScore = String.valueOf(stats[1]*2);

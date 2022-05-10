@@ -431,7 +431,7 @@
             android:textSize="15sp" />
 
         <RadioButton
-            android:id="@+id/rchance"
+            android:id="@+id/rY"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:visibility="invisible"></RadioButton>
